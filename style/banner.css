@@ -24,3 +24,11 @@
     background: url("../img/Lupa.png") no-repeat;
     background-position: 1.5em;
 }
+
+.swiper-slide img {
+    width: 100%;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    display: none;
+}
