@@ -27,3 +27,24 @@
 .descricao__texto{
     font-size: 14px;
 }
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+}
+
+.botoes__item{
+    display: flex;
+}
+
+.botoes__ancora{
+    background-color: var(--Vermelho);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+}
