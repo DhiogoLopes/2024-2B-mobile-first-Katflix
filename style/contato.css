@@ -23,5 +23,6 @@
     font-weight: 400;
     color: var(--vermelho);
     text-align: center;
-    mudar isso aqui
+    background: url();
+    background-position: 1,5em;
 }
