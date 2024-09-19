@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katflix</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -15,7 +15,9 @@
     <header class="cabecalho">
         <div class="caixa">
             <a href="#" class=""><img class="caixa__imagem item__trasparente" src="img/Favoritos.svg" alt=""></a>
-            <input type="checkbox" class="caixa__botao" id="menu">
+            <ul class="opcoes">
+                <input type="checkbox" id="opcoes-menu" class="caixa__botao" id="menu">
+            </ul>
             <label for="menu">
                 <span class="cabecalho__menu-filme"></span>
             </label>
@@ -41,11 +43,11 @@
             <h1 class="caixatitulo"><b class="caixa__titulo--negrito">ALura</b>Books</h1>
         </div>
 
-         <ul class="opcoes">
+        <ul class="opcoes">
             <li class="opcoes__item">Categorias</li>
             <li class="opcoes__item"><a class="opcoes__link" href="#"></a>Favoritos</li>
             <li class="opcoes__item"><a class="opcoes__link" href="#"></a>Minha estante</li>
-         </ul>
+        </ul>
 
         <div class="caixa">
             <a href=""><img src="img/Favoritos.svg" alt="Favoritos"></a>
@@ -61,83 +63,87 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
         <!-- Recipiente principal do controle deslizante -->
-         <div class="swiper">
+        <div class="swiper">
             <!-- Envoltório adicional necessário -->
-             <div class="swipper-wrapper">
+            <div class="swiper-wrapper">
                 <!-- Slides -->
-                 <div class="swiper-sliede">Slide 1</div>
-                 <div class="swiper-sliede">Slide 2</div>
-                 <div class="swiper-sliede">Slide 3</div>
-             </div>
-             <!-- Se precisarmos de paginação -->
-             <div class="swiper-paganation"></div>
+                <div class="swiper-sliede"><img src="img/1.png" alt=""></div>
+                <div class="swiper-sliede"><img src="img/2.png" alt=""></div>
+                <div class="swiper-sliede"><img src="img/3.png" alt=""></div>
+                <div class="swiper-sliede"><img src="img/3.png" alt=""></div>
+                <div class="swiper-sliede"><img src="img/3.png" alt=""></div>
+            </div>
+            <!-- Se precisarmos de paginação -->
+            <div class="swiper-paganation"></div>
 
-             <!-- Se precisarmos de botões de navegação -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+            <!-- Se precisarmos de botões de navegação -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-              <!-- Se precisarmos de barra de rolagem -->
-               <div class="swiper-scrollbar"></div>
-         </div>
-         <div class="card">
+            <!-- Se precisarmos de barra de rolagem -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="card">
             <div class="card__descricao">
                 <div class="descricao">
                     <h3 class="descricao__titulo">Talvez você se interesse por...</h3>
                     <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
                     <p class="descricao__texto">Contruindo uma aplicaçao integrada com a plataforma do Google</p>
                 </div>
-                <img src="" class="descricao__imagem" alt="Livro-angular">
+                <img src="img/4.png" class="descricao__imagem" alt="Livro-angular">
             </div>
             <div class="card__botoes">
                 <ul class="botoes">
-                <li class="botoes__item"><img src="img/Favoritos.svg" alt="Colocar livro nos favoritos"></li>
-                <li class="botoes__item"><img src="img/Compras.png" alt="Colocar livro no carrinho"></li>    
-            </ul>
-            <a href="#" class="botoes__ancora">Saiba mais</a>
+                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="Colocar livro nos favoritos"></li>
+                    <li class="botoes__item"><img src="img/Compras.png" alt="Colocar livro no carrinho"></li>
+                </ul>
+                <a href="#" class="botoes__ancora">Saiba mais</a>
             </div>
-         </div>
+        </div>
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
         <!-- Recipiente principal do controle deslizante -->
-         <div class="swiper">
+        <div class="swiper">
             <!-- Envoltório adicional necessário -->
-             <div class="swipper-wrapper">
+            <div class="swiper-wrapper">
                 <!-- Slides -->
-                 <div class="swiper-sliede">Slide 1</div>
-                 <div class="swiper-sliede">Slide 2</div>
-                 <div class="swiper-sliede">Slide 3</div>
-             </div>
-             <!-- Se precisarmos de paginação -->
-             <div class="swiper-paganation"></div>
+                <div class="swiper-sliede"><img src="img/1.png" alt=""></div>
+                <div class="swiper-sliede"><img src="img/2.png" alt=""></div>
+                <div class="swiper-sliede"><img src="img/3.png" alt=""></div>
+                <div class="swiper-sliede"><img src="img/3.png" alt=""></div>
+                <div class="swiper-sliede"><img src="img/3.png" alt=""></div>
+            </div>
+            <!-- Se precisarmos de paginação -->
+            <div class="swiper-paganation"></div>
 
-             <!-- Se precisarmos de botões de navegação -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+            <!-- Se precisarmos de botões de navegação -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-              <!-- Se precisarmos de barra de rolagem -->
-               <div class="swiper-scrollbar"></div>
-         </div>
-         <div class="card">
+            <!-- Se precisarmos de barra de rolagem -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="card">
             <div class="card__descricao">
                 <div class="descricao">
                     <h3 class="descricao__titulo">Talvez você se interesse por...</h3>
                     <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
                     <p class="descricao__texto">Contruindo uma aplicaçao integrada com a plataforma do Google</p>
                 </div>
-                <img src="" class="descricao__imagem" alt="Livro-angular">
+                <img src="img/5.png" class="descricao__imagem" alt="Livro-angular">
             </div>
             <div class="card__botoes">
                 <ul class="botoes">
-                <li class="botoes__item"><img src="img/Favoritos.svg" alt="Colocar livro nos favoritos"></li>
-                <li class="botoes__item"><img src="img/Compras.png" alt="Colocar livro no carrinho"></li>    
-            </ul>
-            <a href="#" class="botoes__ancora">Saiba mais</a>
+                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="Colocar livro nos favoritos"></li>
+                    <li class="botoes__item"><img src="img/Compras.png" alt="Colocar livro no carrinho"></li>
+                </ul>
+                <a href="#" class="botoes__ancora">Saiba mais</a>
             </div>
-         </div>
+        </div>
     </section>
     <section class="topicos">
-        <h2 class="topicos__titulo">TOPICOS VISUTADOS RECENTEMENTE</h2>
+        <h2 class="topicos__titulo">TOPICOS VISiTADOS RECENTEMENTE</h2>
         <ul class="topicos__lista">
             <li class="topicos__item">
                 <a href="" class="topicos__link">Android</a>
@@ -172,17 +178,17 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-     <script>
+    <script>
         const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
             slidesPerView: 3,
             pagination: {
                 el: '.swiper-pagination',
-                type: 'bullests'
+                type: 'bullets'
             }
-        });
-     </script>
-       
+        })
+    </script>
+
 </body>
 
 </html>
