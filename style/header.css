@@ -1,17 +1,23 @@
-.cabecalho__menu-filme{
+.cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
-    background-image: url(../img/Menu.png);
+    background-image: url(../img/Menu-hamburguer.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
 }
 
-body {
-    background-color: var(--Preto);
-    font-family: var(--texto-titulo);
-    font-size: 16px;
-    font-weight: 400;
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
 }
 
 .caixa__imagem {
@@ -29,14 +35,6 @@ body {
     display: block;
 }
 
-.cabecalho {
-    background-color: var(--branco);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
 .lista-menu__titulo,
 .lista-menu__item {
     padding: 1em;
@@ -48,44 +46,65 @@ body {
     font-weight: bold;
 }
 
-.lista-menu__link{
+.lista-menu__link {
     color: var(--Vermelhor-forte);
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.caixa__botao{
+.caixa__botao {
+    display: none;
+}
+.caixa__titulo{
+    display: none;
+}
+.opcoes{
     display: none;
 }
 
-@media screen and (min-width: 1024px){
-     .caixa__titulo{
-        font-family: var(--texto-titulo);
+@media screen and (min-width: 1024px) {
+    .caixa__titulo {
+        font-family: var(--fonte-principal);
         font-weight: 400;
         font-size: 30px;
         display: block;
-     }
+    }
 
-     .caixa__titulo--negrito{
+    .caixa__titulo--negrito {
         font-weight: 700;
-        color: var(--Vermelho);
-     }
-}
+        color: var(--laranja);
+    }
 
-.opcoes{
-    display: flex;
-}
 
-.opcoes__item{
-    padding: 0 1em;
-    text-transform: uppercase;
-}
+    .opcoes {
+        display: flex;
+    }
 
-.opcoes__link{
-    text-decoration: none;
-    color: var(--Preto);
-}
+    .opcoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
 
-.item__trasparente{
-    display: none;
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .item__trasparente {
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes__botao:checked~.lista menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
 }
