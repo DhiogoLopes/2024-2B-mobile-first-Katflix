@@ -9,10 +9,11 @@
 
 :root {
     --cor-fundo: #EBECEE;
+    --preto: #0b090a;
     --branco: #ffffff;
-    --laranja: #EB9B00;
-    --azul: #002F52;
-    --preto: #000000;
+    --vermelho-fraco: #e5383b;
+    --vermelho: #ba181b;
+    --Vermelho-forte: #660708;
     --fonte-principal : "Poppins", sans-serif;
 }
 
